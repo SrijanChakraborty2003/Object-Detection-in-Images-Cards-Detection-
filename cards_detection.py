@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import io
 from ultralytics import YOLO
-model = YOLO("trained_model.pt")
+model = YOLO("trained_YOLO_model.pt")
 st.title("Playing Card Detection Using YOLOv8")
 st.header("Upload an Image to Detect Playing Cards")
 image_file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
