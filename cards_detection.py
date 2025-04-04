@@ -27,9 +27,9 @@ if image_file is not None:
     st.image(result.plot(), caption="Detected Playing Cards", use_column_width=True)
 
     # Display additional information (confidence scores and classes)
-    st.write("### Detected Cards Info")
-    card_info = ""
-    for i, (class_id, conf, xyxy) in enumerate(zip(result.boxes.cls, result.boxes.conf, result.boxes.xyxy)):
-        card_info += f"Card {i+1} - Class: {model.names[class_id]} | Confidence: {conf:.2f} | Bounding Box: {xyxy.tolist()}<br>"
+    # st.write("### Detected Cards Info")
+    # card_info = ""
+    # for i, (class_id, conf, xyxy) in enumerate(zip(result.boxes.cls, result.boxes.conf, result.boxes.xyxy)):
+    #     card_info += f"Card {i+1} - Class: {model.names[class_id]} | Confidence: {conf:.2f} | Bounding Box: {xyxy.tolist()}<br>"
     
-    st.markdown(card_info, unsafe_allow_html=True)
+    # st.markdown(card_info, unsafe_allow_html=True)
